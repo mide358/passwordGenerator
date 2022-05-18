@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="first">
+      <div class="align-first">
+        <h1 id="heading">Generate a <br /><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+
+        <input type="number" placeholder="input password length" id="len" />
+        <br />
+        <button id="gen-btn">⚡ Generate passwords</button>
+        <p id="error"></p>
+      </div>
+    </div>
+    <hr />
+    <div class="second">
+      <div class="row">
+        <input
+          type="text"
+          class="password"
+          placeholder="**************"
+          disabled
+        />
+        <input
+          type="text"
+          class="password"
+          placeholder="**************"
+          readonly
+          disabled
+        />
+      </div>
+
+      <div class="row">
+        <input
+          type="text"
+          class="password"
+          placeholder="**************"
+          readonly
+          disabled
+        />
+        <input
+          type="text"
+          class="password"
+          placeholder="**************"
+          readonly
+          disabled
+        />
+      </div>
+    </div>
+
+    <button id="copy-btn">Copy</button>
+    <script src="index.js"></script>
+  </body>
+</html>
